@@ -1,0 +1,69 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+	<bsdf type="diffuse" id="mat-wall" name="mat-wall">
+		<rgb value="1.000000 0.500000 0.200000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-roof" name="mat-roof">
+		<rgb value="0.290000 0.250000 0.210000" name="reflectance"/>
+	</bsdf>
+
+<!-- Emitters -->
+
+
+<!-- Shapes -->
+
+	<shape type="ply" id="mesh-Holland_Tunnel_ventilation_building-wall" name="mesh-Holland_Tunnel_ventilation_building-wall">
+		<string name="filename" value="meshes/Holland_Tunnel_ventilation_building-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Holland_Tunnel_ventilation_building-roof" name="mesh-Holland_Tunnel_ventilation_building-roof">
+		<string name="filename" value="meshes/Holland_Tunnel_ventilation_building-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Spring_Street_Salt_Shed-wall" name="mesh-Spring_Street_Salt_Shed-wall">
+		<string name="filename" value="meshes/Spring_Street_Salt_Shed-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Spring_Street_Salt_Shed-roof" name="mesh-Spring_Street_Salt_Shed-roof">
+		<string name="filename" value="meshes/Spring_Street_Salt_Shed-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11479-wall" name="mesh-element_11479-wall">
+		<string name="filename" value="meshes/element_11479-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11479-roof" name="mesh-element_11479-roof">
+		<string name="filename" value="meshes/element_11479-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Pier_40-roof" name="mesh-Pier_40-roof">
+		<string name="filename" value="meshes/Pier_40-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Pier_40-wall" name="mesh-Pier_40-wall">
+		<string name="filename" value="meshes/Pier_40-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>

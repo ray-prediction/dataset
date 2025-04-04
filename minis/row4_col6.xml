@@ -1,0 +1,1550 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+	<bsdf type="diffuse" id="mat-wall" name="mat-wall">
+		<rgb value="1.000000 0.500000 0.200000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-roof" name="mat-roof">
+		<rgb value="0.290000 0.250000 0.210000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-e8cba7" name="mat-e8cba7">
+		<rgb value="0.909804 0.796078 0.654902" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-646257" name="mat-646257">
+		<rgb value="0.392157 0.384314 0.341176" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-d8c3a2" name="mat-d8c3a2">
+		<rgb value="0.847059 0.764706 0.635294" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-cfc7b5" name="mat-cfc7b5">
+		<rgb value="0.811765 0.780392 0.709804" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-504328" name="mat-504328">
+		<rgb value="0.313726 0.262745 0.156863" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-eeeee6" name="mat-eeeee6">
+		<rgb value="0.933333 0.933333 0.901961" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-ac936a" name="mat-ac936a">
+		<rgb value="0.674510 0.576471 0.415686" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-a18467" name="mat-a18467">
+		<rgb value="0.631373 0.517647 0.403922" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-bb9d7b" name="mat-bb9d7b">
+		<rgb value="0.733333 0.615686 0.482353" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-94a1a7" name="mat-94a1a7">
+		<rgb value="0.580392 0.631373 0.654902" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-2b2c2e" name="mat-2b2c2e">
+		<rgb value="0.168627 0.172549 0.180392" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-a3a49d" name="mat-a3a49d">
+		<rgb value="0.639216 0.643137 0.615686" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-826450" name="mat-826450">
+		<rgb value="0.509804 0.392157 0.313726" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-907161" name="mat-907161">
+		<rgb value="0.564706 0.443137 0.380392" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-8b6a5b" name="mat-8b6a5b">
+		<rgb value="0.545098 0.415686 0.356863" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-95796e" name="mat-95796e">
+		<rgb value="0.584314 0.474510 0.431373" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-b0a07f" name="mat-b0a07f">
+		<rgb value="0.690196 0.627451 0.498039" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-e1e0cc" name="mat-e1e0cc">
+		<rgb value="0.882353 0.878431 0.800000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-c46849" name="mat-c46849">
+		<rgb value="0.768627 0.407843 0.286275" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-bcc1bd" name="mat-bcc1bd">
+		<rgb value="0.737255 0.756863 0.741176" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-c57e5c" name="mat-c57e5c">
+		<rgb value="0.772549 0.494118 0.360784" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-c3ba99" name="mat-c3ba99">
+		<rgb value="0.764706 0.729412 0.600000" name="reflectance"/>
+	</bsdf>
+
+<!-- Emitters -->
+
+
+<!-- Shapes -->
+
+	<shape type="ply" id="mesh-element_1383-wall" name="mesh-element_1383-wall">
+		<string name="filename" value="meshes/element_1383-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1383-roof" name="mesh-element_1383-roof">
+		<string name="filename" value="meshes/element_1383-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1392-wall" name="mesh-element_1392-wall">
+		<string name="filename" value="meshes/element_1392-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1392-roof" name="mesh-element_1392-roof">
+		<string name="filename" value="meshes/element_1392-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1395-wall" name="mesh-element_1395-wall">
+		<string name="filename" value="meshes/element_1395-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1395-roof" name="mesh-element_1395-roof">
+		<string name="filename" value="meshes/element_1395-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1397-wall" name="mesh-element_1397-wall">
+		<string name="filename" value="meshes/element_1397-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1397-roof" name="mesh-element_1397-roof">
+		<string name="filename" value="meshes/element_1397-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1409-e8cba7" name="mesh-element_1409-e8cba7">
+		<string name="filename" value="meshes/element_1409-e8cba7.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-e8cba7" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1409-roof" name="mesh-element_1409-roof">
+		<string name="filename" value="meshes/element_1409-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1410-646257" name="mesh-element_1410-646257">
+		<string name="filename" value="meshes/element_1410-646257.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-646257" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1410-roof" name="mesh-element_1410-roof">
+		<string name="filename" value="meshes/element_1410-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Roosevelt_Building-wall" name="mesh-Roosevelt_Building-wall">
+		<string name="filename" value="meshes/Roosevelt_Building-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Roosevelt_Building-roof" name="mesh-Roosevelt_Building-roof">
+		<string name="filename" value="meshes/Roosevelt_Building-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1414-wall" name="mesh-element_1414-wall">
+		<string name="filename" value="meshes/element_1414-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1414-roof" name="mesh-element_1414-roof">
+		<string name="filename" value="meshes/element_1414-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1416-wall" name="mesh-element_1416-wall">
+		<string name="filename" value="meshes/element_1416-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1416-roof" name="mesh-element_1416-roof">
+		<string name="filename" value="meshes/element_1416-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1420-d8c3a2" name="mesh-element_1420-d8c3a2">
+		<string name="filename" value="meshes/element_1420-d8c3a2.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-d8c3a2" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1420-roof" name="mesh-element_1420-roof">
+		<string name="filename" value="meshes/element_1420-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1422-cfc7b5" name="mesh-element_1422-cfc7b5">
+		<string name="filename" value="meshes/element_1422-cfc7b5.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-cfc7b5" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1422-504328" name="mesh-element_1422-504328">
+		<string name="filename" value="meshes/element_1422-504328.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-504328" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1429-eeeee6" name="mesh-element_1429-eeeee6">
+		<string name="filename" value="meshes/element_1429-eeeee6.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-eeeee6" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1429-roof" name="mesh-element_1429-roof">
+		<string name="filename" value="meshes/element_1429-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1431-wall" name="mesh-element_1431-wall">
+		<string name="filename" value="meshes/element_1431-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1431-roof" name="mesh-element_1431-roof">
+		<string name="filename" value="meshes/element_1431-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1432-wall" name="mesh-element_1432-wall">
+		<string name="filename" value="meshes/element_1432-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1432-roof" name="mesh-element_1432-roof">
+		<string name="filename" value="meshes/element_1432-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1433-wall" name="mesh-element_1433-wall">
+		<string name="filename" value="meshes/element_1433-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1433-roof" name="mesh-element_1433-roof">
+		<string name="filename" value="meshes/element_1433-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1434-wall" name="mesh-element_1434-wall">
+		<string name="filename" value="meshes/element_1434-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1434-roof" name="mesh-element_1434-roof">
+		<string name="filename" value="meshes/element_1434-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1435-wall" name="mesh-element_1435-wall">
+		<string name="filename" value="meshes/element_1435-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1435-roof" name="mesh-element_1435-roof">
+		<string name="filename" value="meshes/element_1435-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1436-wall" name="mesh-element_1436-wall">
+		<string name="filename" value="meshes/element_1436-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1436-roof" name="mesh-element_1436-roof">
+		<string name="filename" value="meshes/element_1436-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1437-wall" name="mesh-element_1437-wall">
+		<string name="filename" value="meshes/element_1437-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1437-roof" name="mesh-element_1437-roof">
+		<string name="filename" value="meshes/element_1437-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1438-wall" name="mesh-element_1438-wall">
+		<string name="filename" value="meshes/element_1438-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1438-roof" name="mesh-element_1438-roof">
+		<string name="filename" value="meshes/element_1438-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1439-wall" name="mesh-element_1439-wall">
+		<string name="filename" value="meshes/element_1439-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1439-roof" name="mesh-element_1439-roof">
+		<string name="filename" value="meshes/element_1439-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1440-wall" name="mesh-element_1440-wall">
+		<string name="filename" value="meshes/element_1440-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1440-roof" name="mesh-element_1440-roof">
+		<string name="filename" value="meshes/element_1440-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1441-wall" name="mesh-element_1441-wall">
+		<string name="filename" value="meshes/element_1441-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1441-roof" name="mesh-element_1441-roof">
+		<string name="filename" value="meshes/element_1441-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1442-wall" name="mesh-element_1442-wall">
+		<string name="filename" value="meshes/element_1442-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1442-roof" name="mesh-element_1442-roof">
+		<string name="filename" value="meshes/element_1442-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1443-wall" name="mesh-element_1443-wall">
+		<string name="filename" value="meshes/element_1443-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1443-roof" name="mesh-element_1443-roof">
+		<string name="filename" value="meshes/element_1443-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1444-wall" name="mesh-element_1444-wall">
+		<string name="filename" value="meshes/element_1444-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1444-roof" name="mesh-element_1444-roof">
+		<string name="filename" value="meshes/element_1444-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1445-wall" name="mesh-element_1445-wall">
+		<string name="filename" value="meshes/element_1445-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1445-roof" name="mesh-element_1445-roof">
+		<string name="filename" value="meshes/element_1445-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1446-ac936a" name="mesh-element_1446-ac936a">
+		<string name="filename" value="meshes/element_1446-ac936a.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-ac936a" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1446-a18467" name="mesh-element_1446-a18467">
+		<string name="filename" value="meshes/element_1446-a18467.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-a18467" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1447-wall" name="mesh-element_1447-wall">
+		<string name="filename" value="meshes/element_1447-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1447-roof" name="mesh-element_1447-roof">
+		<string name="filename" value="meshes/element_1447-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1449-wall" name="mesh-element_1449-wall">
+		<string name="filename" value="meshes/element_1449-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1449-roof" name="mesh-element_1449-roof">
+		<string name="filename" value="meshes/element_1449-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1450-wall" name="mesh-element_1450-wall">
+		<string name="filename" value="meshes/element_1450-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1450-roof" name="mesh-element_1450-roof">
+		<string name="filename" value="meshes/element_1450-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1451-wall" name="mesh-element_1451-wall">
+		<string name="filename" value="meshes/element_1451-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1451-roof" name="mesh-element_1451-roof">
+		<string name="filename" value="meshes/element_1451-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1478-bb9d7b" name="mesh-element_1478-bb9d7b">
+		<string name="filename" value="meshes/element_1478-bb9d7b.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-bb9d7b" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1478-roof" name="mesh-element_1478-roof">
+		<string name="filename" value="meshes/element_1478-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1478-94a1a7" name="mesh-element_1478-94a1a7">
+		<string name="filename" value="meshes/element_1478-94a1a7.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-94a1a7" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1478-2b2c2e" name="mesh-element_1478-2b2c2e">
+		<string name="filename" value="meshes/element_1478-2b2c2e.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-2b2c2e" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1478-wall" name="mesh-element_1478-wall">
+		<string name="filename" value="meshes/element_1478-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1487-wall" name="mesh-element_1487-wall">
+		<string name="filename" value="meshes/element_1487-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1487-roof" name="mesh-element_1487-roof">
+		<string name="filename" value="meshes/element_1487-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1489-wall" name="mesh-element_1489-wall">
+		<string name="filename" value="meshes/element_1489-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1489-roof" name="mesh-element_1489-roof">
+		<string name="filename" value="meshes/element_1489-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1490-wall" name="mesh-element_1490-wall">
+		<string name="filename" value="meshes/element_1490-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1490-roof" name="mesh-element_1490-roof">
+		<string name="filename" value="meshes/element_1490-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1492-wall" name="mesh-element_1492-wall">
+		<string name="filename" value="meshes/element_1492-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1492-roof" name="mesh-element_1492-roof">
+		<string name="filename" value="meshes/element_1492-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1493-wall" name="mesh-element_1493-wall">
+		<string name="filename" value="meshes/element_1493-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1493-roof" name="mesh-element_1493-roof">
+		<string name="filename" value="meshes/element_1493-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1496-wall" name="mesh-element_1496-wall">
+		<string name="filename" value="meshes/element_1496-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1496-roof" name="mesh-element_1496-roof">
+		<string name="filename" value="meshes/element_1496-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1498-wall" name="mesh-element_1498-wall">
+		<string name="filename" value="meshes/element_1498-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1498-roof" name="mesh-element_1498-roof">
+		<string name="filename" value="meshes/element_1498-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1499-wall" name="mesh-element_1499-wall">
+		<string name="filename" value="meshes/element_1499-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1499-roof" name="mesh-element_1499-roof">
+		<string name="filename" value="meshes/element_1499-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1500-wall" name="mesh-element_1500-wall">
+		<string name="filename" value="meshes/element_1500-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1500-roof" name="mesh-element_1500-roof">
+		<string name="filename" value="meshes/element_1500-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1501-wall" name="mesh-element_1501-wall">
+		<string name="filename" value="meshes/element_1501-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1501-roof" name="mesh-element_1501-roof">
+		<string name="filename" value="meshes/element_1501-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1503-wall" name="mesh-element_1503-wall">
+		<string name="filename" value="meshes/element_1503-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1503-roof" name="mesh-element_1503-roof">
+		<string name="filename" value="meshes/element_1503-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Cinema_Village-wall" name="mesh-Cinema_Village-wall">
+		<string name="filename" value="meshes/Cinema_Village-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Cinema_Village-roof" name="mesh-Cinema_Village-roof">
+		<string name="filename" value="meshes/Cinema_Village-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1505-wall" name="mesh-element_1505-wall">
+		<string name="filename" value="meshes/element_1505-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1505-roof" name="mesh-element_1505-roof">
+		<string name="filename" value="meshes/element_1505-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1512-wall" name="mesh-element_1512-wall">
+		<string name="filename" value="meshes/element_1512-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1512-roof" name="mesh-element_1512-roof">
+		<string name="filename" value="meshes/element_1512-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1513-wall" name="mesh-element_1513-wall">
+		<string name="filename" value="meshes/element_1513-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1513-roof" name="mesh-element_1513-roof">
+		<string name="filename" value="meshes/element_1513-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1516-wall" name="mesh-element_1516-wall">
+		<string name="filename" value="meshes/element_1516-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1516-roof" name="mesh-element_1516-roof">
+		<string name="filename" value="meshes/element_1516-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1518-wall" name="mesh-element_1518-wall">
+		<string name="filename" value="meshes/element_1518-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1518-roof" name="mesh-element_1518-roof">
+		<string name="filename" value="meshes/element_1518-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1523-wall" name="mesh-element_1523-wall">
+		<string name="filename" value="meshes/element_1523-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1523-roof" name="mesh-element_1523-roof">
+		<string name="filename" value="meshes/element_1523-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1524-wall" name="mesh-element_1524-wall">
+		<string name="filename" value="meshes/element_1524-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1524-roof" name="mesh-element_1524-roof">
+		<string name="filename" value="meshes/element_1524-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1525-wall" name="mesh-element_1525-wall">
+		<string name="filename" value="meshes/element_1525-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1525-roof" name="mesh-element_1525-roof">
+		<string name="filename" value="meshes/element_1525-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1527-wall" name="mesh-element_1527-wall">
+		<string name="filename" value="meshes/element_1527-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1527-roof" name="mesh-element_1527-roof">
+		<string name="filename" value="meshes/element_1527-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1530-wall" name="mesh-element_1530-wall">
+		<string name="filename" value="meshes/element_1530-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1530-roof" name="mesh-element_1530-roof">
+		<string name="filename" value="meshes/element_1530-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1535-wall" name="mesh-element_1535-wall">
+		<string name="filename" value="meshes/element_1535-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1535-roof" name="mesh-element_1535-roof">
+		<string name="filename" value="meshes/element_1535-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1536-wall" name="mesh-element_1536-wall">
+		<string name="filename" value="meshes/element_1536-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1536-roof" name="mesh-element_1536-roof">
+		<string name="filename" value="meshes/element_1536-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1538-wall" name="mesh-element_1538-wall">
+		<string name="filename" value="meshes/element_1538-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1538-roof" name="mesh-element_1538-roof">
+		<string name="filename" value="meshes/element_1538-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1539-wall" name="mesh-element_1539-wall">
+		<string name="filename" value="meshes/element_1539-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1539-roof" name="mesh-element_1539-roof">
+		<string name="filename" value="meshes/element_1539-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1541-wall" name="mesh-element_1541-wall">
+		<string name="filename" value="meshes/element_1541-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1541-roof" name="mesh-element_1541-roof">
+		<string name="filename" value="meshes/element_1541-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1543-wall" name="mesh-element_1543-wall">
+		<string name="filename" value="meshes/element_1543-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1543-roof" name="mesh-element_1543-roof">
+		<string name="filename" value="meshes/element_1543-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1546-wall" name="mesh-element_1546-wall">
+		<string name="filename" value="meshes/element_1546-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1546-roof" name="mesh-element_1546-roof">
+		<string name="filename" value="meshes/element_1546-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1547-a3a49d" name="mesh-element_1547-a3a49d">
+		<string name="filename" value="meshes/element_1547-a3a49d.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-a3a49d" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_1547-roof" name="mesh-element_1547-roof">
+		<string name="filename" value="meshes/element_1547-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3816-wall" name="mesh-element_3816-wall">
+		<string name="filename" value="meshes/element_3816-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3816-roof" name="mesh-element_3816-roof">
+		<string name="filename" value="meshes/element_3816-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3820-wall" name="mesh-element_3820-wall">
+		<string name="filename" value="meshes/element_3820-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3820-roof" name="mesh-element_3820-roof">
+		<string name="filename" value="meshes/element_3820-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3821-wall" name="mesh-element_3821-wall">
+		<string name="filename" value="meshes/element_3821-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3821-roof" name="mesh-element_3821-roof">
+		<string name="filename" value="meshes/element_3821-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3824-wall" name="mesh-element_3824-wall">
+		<string name="filename" value="meshes/element_3824-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3824-roof" name="mesh-element_3824-roof">
+		<string name="filename" value="meshes/element_3824-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3826-wall" name="mesh-element_3826-wall">
+		<string name="filename" value="meshes/element_3826-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3826-roof" name="mesh-element_3826-roof">
+		<string name="filename" value="meshes/element_3826-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3828-wall" name="mesh-element_3828-wall">
+		<string name="filename" value="meshes/element_3828-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3828-roof" name="mesh-element_3828-roof">
+		<string name="filename" value="meshes/element_3828-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3833-wall" name="mesh-element_3833-wall">
+		<string name="filename" value="meshes/element_3833-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3833-roof" name="mesh-element_3833-roof">
+		<string name="filename" value="meshes/element_3833-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3860-wall" name="mesh-element_3860-wall">
+		<string name="filename" value="meshes/element_3860-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3860-roof" name="mesh-element_3860-roof">
+		<string name="filename" value="meshes/element_3860-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-McDonald_s-wall" name="mesh-McDonald_s-wall">
+		<string name="filename" value="meshes/McDonald_s-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-McDonald_s-roof" name="mesh-McDonald_s-roof">
+		<string name="filename" value="meshes/McDonald_s-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3869-wall" name="mesh-element_3869-wall">
+		<string name="filename" value="meshes/element_3869-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3869-roof" name="mesh-element_3869-roof">
+		<string name="filename" value="meshes/element_3869-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3872-wall" name="mesh-element_3872-wall">
+		<string name="filename" value="meshes/element_3872-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3872-roof" name="mesh-element_3872-roof">
+		<string name="filename" value="meshes/element_3872-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3878-wall" name="mesh-element_3878-wall">
+		<string name="filename" value="meshes/element_3878-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3878-roof" name="mesh-element_3878-roof">
+		<string name="filename" value="meshes/element_3878-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3879-wall" name="mesh-element_3879-wall">
+		<string name="filename" value="meshes/element_3879-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3879-roof" name="mesh-element_3879-roof">
+		<string name="filename" value="meshes/element_3879-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3880-826450" name="mesh-element_3880-826450">
+		<string name="filename" value="meshes/element_3880-826450.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-826450" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3880-roof" name="mesh-element_3880-roof">
+		<string name="filename" value="meshes/element_3880-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3881-wall" name="mesh-element_3881-wall">
+		<string name="filename" value="meshes/element_3881-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3881-roof" name="mesh-element_3881-roof">
+		<string name="filename" value="meshes/element_3881-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3882-907161" name="mesh-element_3882-907161">
+		<string name="filename" value="meshes/element_3882-907161.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-907161" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3882-roof" name="mesh-element_3882-roof">
+		<string name="filename" value="meshes/element_3882-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3883-wall" name="mesh-element_3883-wall">
+		<string name="filename" value="meshes/element_3883-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3883-roof" name="mesh-element_3883-roof">
+		<string name="filename" value="meshes/element_3883-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3884-8b6a5b" name="mesh-element_3884-8b6a5b">
+		<string name="filename" value="meshes/element_3884-8b6a5b.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-8b6a5b" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3884-roof" name="mesh-element_3884-roof">
+		<string name="filename" value="meshes/element_3884-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-The_Dr__Martens_Store-95796e" name="mesh-The_Dr__Martens_Store-95796e">
+		<string name="filename" value="meshes/The_Dr__Martens_Store-95796e.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-95796e" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-The_Dr__Martens_Store-roof" name="mesh-The_Dr__Martens_Store-roof">
+		<string name="filename" value="meshes/The_Dr__Martens_Store-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3885-wall" name="mesh-element_3885-wall">
+		<string name="filename" value="meshes/element_3885-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3885-roof" name="mesh-element_3885-roof">
+		<string name="filename" value="meshes/element_3885-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-FREEHOLD_In_The_Park-wall" name="mesh-FREEHOLD_In_The_Park-wall">
+		<string name="filename" value="meshes/FREEHOLD_In_The_Park-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-FREEHOLD_In_The_Park-roof" name="mesh-FREEHOLD_In_The_Park-roof">
+		<string name="filename" value="meshes/FREEHOLD_In_The_Park-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3902-wall" name="mesh-element_3902-wall">
+		<string name="filename" value="meshes/element_3902-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3902-roof" name="mesh-element_3902-roof">
+		<string name="filename" value="meshes/element_3902-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3904-wall" name="mesh-element_3904-wall">
+		<string name="filename" value="meshes/element_3904-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3904-roof" name="mesh-element_3904-roof">
+		<string name="filename" value="meshes/element_3904-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3905-wall" name="mesh-element_3905-wall">
+		<string name="filename" value="meshes/element_3905-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3905-roof" name="mesh-element_3905-roof">
+		<string name="filename" value="meshes/element_3905-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3907-wall" name="mesh-element_3907-wall">
+		<string name="filename" value="meshes/element_3907-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3907-roof" name="mesh-element_3907-roof">
+		<string name="filename" value="meshes/element_3907-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3910-b0a07f" name="mesh-element_3910-b0a07f">
+		<string name="filename" value="meshes/element_3910-b0a07f.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-b0a07f" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3910-e1e0cc" name="mesh-element_3910-e1e0cc">
+		<string name="filename" value="meshes/element_3910-e1e0cc.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-e1e0cc" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3915-wall" name="mesh-element_3915-wall">
+		<string name="filename" value="meshes/element_3915-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3915-roof" name="mesh-element_3915-roof">
+		<string name="filename" value="meshes/element_3915-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3917-c46849" name="mesh-element_3917-c46849">
+		<string name="filename" value="meshes/element_3917-c46849.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-c46849" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3917-roof" name="mesh-element_3917-roof">
+		<string name="filename" value="meshes/element_3917-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3918-bcc1bd" name="mesh-element_3918-bcc1bd">
+		<string name="filename" value="meshes/element_3918-bcc1bd.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-bcc1bd" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3918-roof" name="mesh-element_3918-roof">
+		<string name="filename" value="meshes/element_3918-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3920-wall" name="mesh-element_3920-wall">
+		<string name="filename" value="meshes/element_3920-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3920-roof" name="mesh-element_3920-roof">
+		<string name="filename" value="meshes/element_3920-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3921-wall" name="mesh-element_3921-wall">
+		<string name="filename" value="meshes/element_3921-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3921-roof" name="mesh-element_3921-roof">
+		<string name="filename" value="meshes/element_3921-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Decker_Building-wall" name="mesh-Decker_Building-wall">
+		<string name="filename" value="meshes/Decker_Building-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Decker_Building-roof" name="mesh-Decker_Building-roof">
+		<string name="filename" value="meshes/Decker_Building-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3925-wall" name="mesh-element_3925-wall">
+		<string name="filename" value="meshes/element_3925-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3925-roof" name="mesh-element_3925-roof">
+		<string name="filename" value="meshes/element_3925-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3926-wall" name="mesh-element_3926-wall">
+		<string name="filename" value="meshes/element_3926-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3926-roof" name="mesh-element_3926-roof">
+		<string name="filename" value="meshes/element_3926-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3928-wall" name="mesh-element_3928-wall">
+		<string name="filename" value="meshes/element_3928-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3928-roof" name="mesh-element_3928-roof">
+		<string name="filename" value="meshes/element_3928-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3940-c57e5c" name="mesh-element_3940-c57e5c">
+		<string name="filename" value="meshes/element_3940-c57e5c.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-c57e5c" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3940-roof" name="mesh-element_3940-roof">
+		<string name="filename" value="meshes/element_3940-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3944-wall" name="mesh-element_3944-wall">
+		<string name="filename" value="meshes/element_3944-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3944-roof" name="mesh-element_3944-roof">
+		<string name="filename" value="meshes/element_3944-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3947-wall" name="mesh-element_3947-wall">
+		<string name="filename" value="meshes/element_3947-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3947-roof" name="mesh-element_3947-roof">
+		<string name="filename" value="meshes/element_3947-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3948-wall" name="mesh-element_3948-wall">
+		<string name="filename" value="meshes/element_3948-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3948-roof" name="mesh-element_3948-roof">
+		<string name="filename" value="meshes/element_3948-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3949-wall" name="mesh-element_3949-wall">
+		<string name="filename" value="meshes/element_3949-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3949-roof" name="mesh-element_3949-roof">
+		<string name="filename" value="meshes/element_3949-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3950-wall" name="mesh-element_3950-wall">
+		<string name="filename" value="meshes/element_3950-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3950-roof" name="mesh-element_3950-roof">
+		<string name="filename" value="meshes/element_3950-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3951-wall" name="mesh-element_3951-wall">
+		<string name="filename" value="meshes/element_3951-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3951-roof" name="mesh-element_3951-roof">
+		<string name="filename" value="meshes/element_3951-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3952-wall" name="mesh-element_3952-wall">
+		<string name="filename" value="meshes/element_3952-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3952-roof" name="mesh-element_3952-roof">
+		<string name="filename" value="meshes/element_3952-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3953-wall" name="mesh-element_3953-wall">
+		<string name="filename" value="meshes/element_3953-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3953-roof" name="mesh-element_3953-roof">
+		<string name="filename" value="meshes/element_3953-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-SGI-USA_New_York_Culture_Centre-wall" name="mesh-SGI-USA_New_York_Culture_Centre-wall">
+		<string name="filename" value="meshes/SGI-USA_New_York_Culture_Centre-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-SGI-USA_New_York_Culture_Centre-roof" name="mesh-SGI-USA_New_York_Culture_Centre-roof">
+		<string name="filename" value="meshes/SGI-USA_New_York_Culture_Centre-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3954-wall" name="mesh-element_3954-wall">
+		<string name="filename" value="meshes/element_3954-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3954-roof" name="mesh-element_3954-roof">
+		<string name="filename" value="meshes/element_3954-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Springler_Building-wall" name="mesh-Springler_Building-wall">
+		<string name="filename" value="meshes/Springler_Building-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Springler_Building-roof" name="mesh-Springler_Building-roof">
+		<string name="filename" value="meshes/Springler_Building-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3955-wall" name="mesh-element_3955-wall">
+		<string name="filename" value="meshes/element_3955-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3955-roof" name="mesh-element_3955-roof">
+		<string name="filename" value="meshes/element_3955-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3956-wall" name="mesh-element_3956-wall">
+		<string name="filename" value="meshes/element_3956-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3956-roof" name="mesh-element_3956-roof">
+		<string name="filename" value="meshes/element_3956-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3957-wall" name="mesh-element_3957-wall">
+		<string name="filename" value="meshes/element_3957-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3957-roof" name="mesh-element_3957-roof">
+		<string name="filename" value="meshes/element_3957-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3958-wall" name="mesh-element_3958-wall">
+		<string name="filename" value="meshes/element_3958-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3958-roof" name="mesh-element_3958-roof">
+		<string name="filename" value="meshes/element_3958-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3959-wall" name="mesh-element_3959-wall">
+		<string name="filename" value="meshes/element_3959-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3959-roof" name="mesh-element_3959-roof">
+		<string name="filename" value="meshes/element_3959-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Carlyle_Court-wall" name="mesh-Carlyle_Court-wall">
+		<string name="filename" value="meshes/Carlyle_Court-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Carlyle_Court-roof" name="mesh-Carlyle_Court-roof">
+		<string name="filename" value="meshes/Carlyle_Court-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3960-wall" name="mesh-element_3960-wall">
+		<string name="filename" value="meshes/element_3960-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3960-roof" name="mesh-element_3960-roof">
+		<string name="filename" value="meshes/element_3960-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3961-wall" name="mesh-element_3961-wall">
+		<string name="filename" value="meshes/element_3961-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3961-roof" name="mesh-element_3961-roof">
+		<string name="filename" value="meshes/element_3961-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-The_Clinton_School-wall" name="mesh-The_Clinton_School-wall">
+		<string name="filename" value="meshes/The_Clinton_School-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-The_Clinton_School-roof" name="mesh-The_Clinton_School-roof">
+		<string name="filename" value="meshes/The_Clinton_School-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3962-wall" name="mesh-element_3962-wall">
+		<string name="filename" value="meshes/element_3962-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3962-roof" name="mesh-element_3962-roof">
+		<string name="filename" value="meshes/element_3962-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3963-wall" name="mesh-element_3963-wall">
+		<string name="filename" value="meshes/element_3963-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3963-roof" name="mesh-element_3963-roof">
+		<string name="filename" value="meshes/element_3963-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Lincoln_Building-wall" name="mesh-Lincoln_Building-wall">
+		<string name="filename" value="meshes/Lincoln_Building-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Lincoln_Building-roof" name="mesh-Lincoln_Building-roof">
+		<string name="filename" value="meshes/Lincoln_Building-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3965-wall" name="mesh-element_3965-wall">
+		<string name="filename" value="meshes/element_3965-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_3965-roof" name="mesh-element_3965-roof">
+		<string name="filename" value="meshes/element_3965-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_4022-wall" name="mesh-element_4022-wall">
+		<string name="filename" value="meshes/element_4022-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_4022-roof" name="mesh-element_4022-roof">
+		<string name="filename" value="meshes/element_4022-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_7746-wall" name="mesh-element_7746-wall">
+		<string name="filename" value="meshes/element_7746-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_7746-roof" name="mesh-element_7746-roof">
+		<string name="filename" value="meshes/element_7746-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_7754-wall" name="mesh-element_7754-wall">
+		<string name="filename" value="meshes/element_7754-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_7754-roof" name="mesh-element_7754-roof">
+		<string name="filename" value="meshes/element_7754-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9272-wall" name="mesh-element_9272-wall">
+		<string name="filename" value="meshes/element_9272-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9272-roof" name="mesh-element_9272-roof">
+		<string name="filename" value="meshes/element_9272-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9276-wall" name="mesh-element_9276-wall">
+		<string name="filename" value="meshes/element_9276-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9276-roof" name="mesh-element_9276-roof">
+		<string name="filename" value="meshes/element_9276-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9277-wall" name="mesh-element_9277-wall">
+		<string name="filename" value="meshes/element_9277-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9277-roof" name="mesh-element_9277-roof">
+		<string name="filename" value="meshes/element_9277-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9278-wall" name="mesh-element_9278-wall">
+		<string name="filename" value="meshes/element_9278-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9278-roof" name="mesh-element_9278-roof">
+		<string name="filename" value="meshes/element_9278-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9279-wall" name="mesh-element_9279-wall">
+		<string name="filename" value="meshes/element_9279-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9279-roof" name="mesh-element_9279-roof">
+		<string name="filename" value="meshes/element_9279-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9281-wall" name="mesh-element_9281-wall">
+		<string name="filename" value="meshes/element_9281-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9281-roof" name="mesh-element_9281-roof">
+		<string name="filename" value="meshes/element_9281-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9289-wall" name="mesh-element_9289-wall">
+		<string name="filename" value="meshes/element_9289-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9289-roof" name="mesh-element_9289-roof">
+		<string name="filename" value="meshes/element_9289-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9290-wall" name="mesh-element_9290-wall">
+		<string name="filename" value="meshes/element_9290-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_9290-roof" name="mesh-element_9290-roof">
+		<string name="filename" value="meshes/element_9290-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Judge_Building-c3ba99" name="mesh-Judge_Building-c3ba99">
+		<string name="filename" value="meshes/Judge_Building-c3ba99.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-c3ba99" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Judge_Building-roof" name="mesh-Judge_Building-roof">
+		<string name="filename" value="meshes/Judge_Building-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11346-wall" name="mesh-element_11346-wall">
+		<string name="filename" value="meshes/element_11346-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11346-roof" name="mesh-element_11346-roof">
+		<string name="filename" value="meshes/element_11346-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11347-wall" name="mesh-element_11347-wall">
+		<string name="filename" value="meshes/element_11347-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11347-roof" name="mesh-element_11347-roof">
+		<string name="filename" value="meshes/element_11347-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-The_New_School_University_Center-wall" name="mesh-The_New_School_University_Center-wall">
+		<string name="filename" value="meshes/The_New_School_University_Center-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-The_New_School_University_Center-roof" name="mesh-The_New_School_University_Center-roof">
+		<string name="filename" value="meshes/The_New_School_University_Center-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11428-wall" name="mesh-element_11428-wall">
+		<string name="filename" value="meshes/element_11428-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11428-roof" name="mesh-element_11428-roof">
+		<string name="filename" value="meshes/element_11428-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11457-wall" name="mesh-element_11457-wall">
+		<string name="filename" value="meshes/element_11457-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11457-roof" name="mesh-element_11457-roof">
+		<string name="filename" value="meshes/element_11457-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11478-wall" name="mesh-element_11478-wall">
+		<string name="filename" value="meshes/element_11478-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11478-roof" name="mesh-element_11478-roof">
+		<string name="filename" value="meshes/element_11478-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Springbone-wall" name="mesh-Springbone-wall">
+		<string name="filename" value="meshes/Springbone-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Springbone-roof" name="mesh-Springbone-roof">
+		<string name="filename" value="meshes/Springbone-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11493-wall" name="mesh-element_11493-wall">
+		<string name="filename" value="meshes/element_11493-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11493-roof" name="mesh-element_11493-roof">
+		<string name="filename" value="meshes/element_11493-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11514-wall" name="mesh-element_11514-wall">
+		<string name="filename" value="meshes/element_11514-wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-wall" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_11514-roof" name="mesh-element_11514-roof">
+		<string name="filename" value="meshes/element_11514-roof.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-roof" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>
