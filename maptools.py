@@ -40,6 +40,7 @@ for i in range(num_x_bins):
         bpy.ops.object.select_all(action='DESELECT')
 
         for obj in grid[i][j]:
+            # FILTER BASED ON OBJECT COMPLEXITY
             if obj.type == 'MESH':# and len(obj.data.polygons) < 10:
                 obj.select_set(True)
 
