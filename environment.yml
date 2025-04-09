@@ -1,0 +1,7 @@
+name: dataenv
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - ipykernel
+prefix: /home/tyler/anaconda3/envs/dataenv
