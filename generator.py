@@ -17,7 +17,7 @@ def log_flat_arr(output_dir, file, X):
 
 def trace_scene(scene_dir, scene_file):
     scene = load_scene(os.path.join(scene_dir, scene_file))
-    output_dir = os.path.splitext(scene_file)[0]
+    output_dir = os.path.join('output', os.path.splitext(scene_file)[0])
 
     try:
         os.mkdir(output_dir)
@@ -50,7 +50,7 @@ def trace_scene(scene_dir, scene_file):
             for i in range(0, 200, spacing):
                 rx_points.append(np.array([r[0], r[1], i]))
 
-            scene.frequency  # Defaults to 3.5GHz
+    scene.frequency  # Defaults to 3.5GHz
 
     mat = ITURadioMaterial(name='concrete', itu_type='concrete',
                            thickness=0.1, scattering_coefficient=0.0, xpd_coefficient=0.0)
@@ -100,7 +100,8 @@ def trace_scene(scene_dir, scene_file):
 
     p_solver = PathSolver()
     paths = p_solver(scene=scene,
-                     max_depth=5,
+                     max_depth=6,
+                     samples_per_src=1000000,
                      los=False,
                      specular_reflection=True,
                      diffuse_reflection=False,
@@ -136,11 +137,15 @@ if __name__ == "__main__":
     max = (500, 500, 1000)
 
     spacing = 25
-    num_tx = 1
+    num_tx = 25
 
     scene_dir = "minis"
     scene_files = [f for f in os.listdir(scene_dir) if f.endswith('.xml')]
     print(scene_files)
 
     for scene_file in scene_files:
-        trace_scene(scene_dir, scene_file)
+        try:
+            trace_scene(scene_dir, scene_file)
+        except:
+            print('OOMED')
+            continue
