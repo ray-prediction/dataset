@@ -14,13 +14,13 @@
 	<bsdf type="twosided" id="mat-Material" name="mat-Material">
 		<bsdf type="principled" name="bsdf">
 			<rgb value="0.800000 0.800000 0.800000" name="base_color"/>
-			<rgb value="1.000000 1.000000 1.000000" name="spec_tint"/>
+			<float name="spec_tint" value="0.000000"/>
 			<float name="spec_trans" value="0.000000"/>
 			<float name="metallic" value="0.000000"/>
 			<float name="anisotropic" value="0.000000"/>
 			<float name="roughness" value="0.250000"/>
 			<float name="sheen" value="0.000000"/>
-			<rgb value="1.000000 1.000000 1.000000" name="sheen_tint"/>
+			<float name="sheen_tint" value="0.500000"/>
 			<float name="clearcoat" value="0.000000"/>
 			<float name="clearcoat_gloss" value="0.000900"/>
 			<float name="specular" value="0.500000"/>
@@ -29,13 +29,28 @@
 	<bsdf type="twosided" id="mat-Material.001" name="mat-Material.001">
 		<bsdf type="principled" name="bsdf">
 			<rgb value="0.800000 0.800000 0.800000" name="base_color"/>
-			<rgb value="1.000000 1.000000 1.000000" name="spec_tint"/>
+			<float name="spec_tint" value="0.000000"/>
 			<float name="spec_trans" value="0.000000"/>
 			<float name="metallic" value="0.000000"/>
 			<float name="anisotropic" value="0.000000"/>
 			<float name="roughness" value="0.250000"/>
 			<float name="sheen" value="0.000000"/>
-			<rgb value="1.000000 1.000000 1.000000" name="sheen_tint"/>
+			<float name="sheen_tint" value="0.500000"/>
+			<float name="clearcoat" value="0.000000"/>
+			<float name="clearcoat_gloss" value="0.000900"/>
+			<float name="specular" value="0.500000"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="mat-Material.002" name="mat-Material.002">
+		<bsdf type="principled" name="bsdf">
+			<rgb value="0.800000 0.800000 0.800000" name="base_color"/>
+			<float name="spec_tint" value="0.000000"/>
+			<float name="spec_trans" value="0.000000"/>
+			<float name="metallic" value="0.000000"/>
+			<float name="anisotropic" value="0.000000"/>
+			<float name="roughness" value="0.250000"/>
+			<float name="sheen" value="0.000000"/>
+			<float name="sheen_tint" value="0.500000"/>
 			<float name="clearcoat" value="0.000000"/>
 			<float name="clearcoat_gloss" value="0.000900"/>
 			<float name="specular" value="0.500000"/>
@@ -47,15 +62,20 @@
 
 <!-- Shapes -->
 
-	<shape type="ply" id="elm__2" name="elm__2">
-		<string name="filename" value="meshes/Cube.ply"/>
+	<shape type="ply" id="mesh-hug1" name="mesh-hug1">
+		<string name="filename" value="meshes/hug1.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-Material" name="bsdf"/>
 	</shape>
-	<shape type="ply" id="elm__4" name="elm__4">
-		<string name="filename" value="meshes/Cube_001.ply"/>
+	<shape type="ply" id="mesh-hug2" name="mesh-hug2">
+		<string name="filename" value="meshes/hug2.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-Material.001" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-hug3" name="mesh-hug3">
+		<string name="filename" value="meshes/hug3.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Material.002" name="bsdf"/>
 	</shape>
 
 <!-- Volumes -->
