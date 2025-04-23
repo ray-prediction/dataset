@@ -17,18 +17,12 @@ class GraphMaker:
         self.shapes = mi.MeshPtr(self.mi_scene.shapes_dr())
 
         self.face_normals = self.calc_face_normals()
-        self.prim_vertices, self.shape_ptr_to_offset = self.get_vertices_and_offsets()
+        self.prim_vertices, self.shape_ptr_to_offset = self.__get_vertices_and_offsets()
         self.face_averages = self.prim_vertices.sum(dim=1) / 3
 
-        print(self.shape_ptr_to_offset)
+    def get_vertices(self):
+        return self.prim_vertices
 
-        # print(self.calc_graph_edges())
-        # time.sleep(1)
-
-        # pos = np.genfromtxt(fname="output_64maps_10txs_5000rx/row0_col0/tx_locations")
-        # print(self.calc_antenna_edges(pos))
-
-        
     def calc_face_normals(self):
         # Will throw an error if there is a non-mesh shape
         shapes = self.shapes
@@ -40,7 +34,7 @@ class GraphMaker:
         face_normals = torch.vstack(face_normals)
         return face_normals
     
-    def get_vertices_and_offsets(self):
+    def __get_vertices_and_offsets(self):
         shapes = self.shapes
         shape_ptrs = dr.reinterpret_array(mi.UInt32, shapes).numpy()
 
@@ -61,7 +55,7 @@ class GraphMaker:
         prim_vertices = torch.vstack(prim_vertices)
         return prim_vertices, shape_ptr_to_offset
         
-    def rt_graph_interactions(self):
+    def __rt_graph_interactions(self):
         mi_scene = self.mi_scene
         face_averages = self.face_averages
         face_normals = self.face_normals
@@ -114,7 +108,7 @@ class GraphMaker:
     
     # Could make this faster using np.unique
     def calc_graph_edges_old(self):
-        indices, interaction_shapes, prim_indices, valid = self.rt_graph_interactions()
+        indices, interaction_shapes, prim_indices, valid = self.__rt_graph_interactions()
 
         count = 0
         for s in self.shapes:
@@ -134,7 +128,7 @@ class GraphMaker:
         return sets
     
     def calc_graph_edges(self):
-        indices, interaction_shapes, prim_indices, valid = self.rt_graph_interactions()
+        indices, interaction_shapes, prim_indices, valid = self.__rt_graph_interactions()
 
         valid_2d = valid.reshape((-1, self.rays_per_source))
         print(valid_2d)
