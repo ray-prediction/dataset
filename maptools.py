@@ -2,9 +2,9 @@ import bpy
 import numpy as np
 from mathutils import Vector
 
-export_path = "/home/tyler/Documents/research/dataset/minis/"
-num_x_bins = 8
-num_y_bins = 8
+export_path = "/home/tyler/Documents/research/dataset/minis3/"
+num_x_bins = 16
+num_y_bins = 16
 
 # The .blend file needs to have buildings as separate objects and without ground plane
 # Get all object locations
@@ -35,13 +35,13 @@ for obj in bpy.data.objects:
     grid[x_bin][y_bin].append(obj)
 
 # Export each grid bin to a separate file
-for i in range(num_x_bins):
-    for j in range(num_y_bins):
+for i in range(0, num_x_bins):
+    for j in range(0, num_y_bins):
         bpy.ops.object.select_all(action='DESELECT')
 
         for obj in grid[i][j]:
             # FILTER BASED ON OBJECT COMPLEXITY
-            if obj.type == 'MESH':# and len(obj.data.polygons) < 10:
+            if obj.type == 'MESH' and len(obj.data.polygons) < 16:
                 obj.select_set(True)
 
         x_mid = num_x_bins / 2
@@ -63,3 +63,6 @@ for i in range(num_x_bins):
         for obj in bpy.context.selected_objects:
             obj.location.x -= x_delta
             obj.location.y -= y_delta 
+
+        print(f"Finished bin {i} {j}")
+

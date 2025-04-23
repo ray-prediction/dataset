@@ -28,8 +28,8 @@ def trace_scene(scene_dir, scene_file):
 
     x_start, y_start, _ = min
     x_end, y_end, _ = max
-    xx = np.linspace(x_start, x_end, spacing)
-    yy = np.linspace(y_start, y_end, spacing)
+    xx = np.linspace(x_start, x_end, h_spacing)
+    yy = np.linspace(y_start, y_end, h_spacing)
     ray_pos = np.array([(x, y, 1000) for x in xx for y in yy])
 
     z_rays = mi.Ray3f(o=ray_pos.T, d=(0, 0, -1))
@@ -40,14 +40,14 @@ def trace_scene(scene_dir, scene_file):
             continue
         start = int(z_hit[2] + 10)
 
-        for i in range(start, 200, spacing):
+        for i in range(start, 100, v_spacing):
             rx_points.append(np.array([z_hit[0], z_hit[1], i]))
 
     # Include points that did not have a valid hitpoint due to lack of floor right now
     for i, v in enumerate(z_hits.is_valid()):
         if (not v):
             r = ray_pos[i]
-            for i in range(0, 200, spacing):
+            for i in range(5, 100, v_spacing):
                 rx_points.append(np.array([r[0], r[1], i]))
 
     scene.frequency  # Defaults to 3.5GHz
@@ -134,12 +134,13 @@ def trace_scene(scene_dir, scene_file):
 
 if __name__ == "__main__":
     min = (0, 0, 0)
-    max = (500, 500, 1000)
+    max = (275, 275, 500)
 
-    spacing = 25
-    num_tx = 25
+    h_spacing = 25
+    v_spacing = 25
+    num_tx = 10
 
-    scene_dir = "minis"
+    scene_dir = "minis3"
     scene_files = [f for f in os.listdir(scene_dir) if f.endswith('.xml')]
     print(scene_files)
 
@@ -147,5 +148,5 @@ if __name__ == "__main__":
         try:
             trace_scene(scene_dir, scene_file)
         except:
-            print('OOMED')
+            print(f'OOMED {scene_file}')
             continue
