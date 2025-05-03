@@ -131,8 +131,8 @@ class GraphMaker:
         indices, interaction_shapes, prim_indices, valid = self.__rt_graph_interactions()
 
         valid_2d = valid.reshape((-1, self.rays_per_source))
-        print(valid_2d)
-        print(valid_2d.shape)
+        # print(valid_2d)
+        # print(valid_2d.shape)
         
         sum = np.sum(valid_2d, axis=1)
         cum_index = np.cumsum(sum)
@@ -191,7 +191,10 @@ if __name__ == "__main__":
     gm = GraphMaker("minis2/row4_col4.xml")
     print(gm.calc_graph_edges())
 
-    time.sleep(5)
+    time.sleep(2)
 
     pos = np.genfromtxt(fname="output_64maps_10txs_5000rx/row0_col0/tx_locations")
     print(gm.calc_antenna_edges(pos))
+
+    del gm
+    print('test')
