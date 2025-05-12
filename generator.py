@@ -100,11 +100,11 @@ def trace_scene(scene_dir, scene_file):
 
     p_solver = PathSolver()
     paths = p_solver(scene=scene,
-                     max_depth=6,
+                     max_depth=7,
                      samples_per_src=1000000,
                      los=False,
                      specular_reflection=True,
-                     diffuse_reflection=False,
+                     diffuse_reflection=True,
                      refraction=False,
                      synthetic_array=False,
                      seed=41)
@@ -140,8 +140,9 @@ if __name__ == "__main__":
     v_spacing = 25
     num_tx = 10
 
-    scene_dir = "minis3"
+    scene_dir = "manhattan_minis4"
     scene_files = [f for f in os.listdir(scene_dir) if f.endswith('.xml')]
+    # scene_files = ['row6_col12.xml']
     print(scene_files)
 
     for scene_file in scene_files:

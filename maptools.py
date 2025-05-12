@@ -33,10 +33,20 @@ for obj in bpy.data.objects:
     x_bin = int((obj.location[0] - x_min) // x_step)
     y_bin = int((obj.location[1] - y_min) // y_step)
     grid[x_bin][y_bin].append(obj)
+    
+resume_flag = False
+resume_i, resume_j = (4, 8)
 
 # Export each grid bin to a separate file
 for i in range(0, num_x_bins):
     for j in range(0, num_y_bins):
+        if resume_flag:
+            if resume_i == i and resume_j == j:
+                print(f"resumed {i}, {j}")
+                resume_flag = False
+            else:
+                continue
+        
         bpy.ops.object.select_all(action='DESELECT')
 
         for obj in grid[i][j]:

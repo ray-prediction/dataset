@@ -1,6 +1,11 @@
 output*
+__pycache__
 *ncu-rep*
 *nsys-rep*
+minis
 minis2
 minis3
+manhattan_output_256
+manhattan_minis4
+manhattan_minis4_dataset
 slightly*
